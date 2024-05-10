@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conselheiro Financeiro Pessoal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Conselheiro Financeiro Pessoal</h1>
+
+    <div id="income-input">
+        <input type="text" id="income-description" placeholder="Descrição da Receita">
+        <input type="number" id="income-amount" placeholder="Valor da Receita">
+        <input type="number" id="income-day" placeholder="Dia (1-31)">
+        <button onclick="addIncome()">Adicionar Receita</button>
+    </div>
+    <table id="incomes-table">
+        <thead>
+            <tr>
+                <th>Descrição</th>
+                <th>Valor</th>
+                <th>Dia</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <div id="expense-input">
+        <input type="text" id="expense-description" placeholder="Descrição da Despesa">
+        <input type="number" id="expense-amount" placeholder="Valor da Despesa">
+        <input type="number" id="expense-day" placeholder="Dia (1-31)">
+        <button onclick="addExpense()">Adicionar Despesa</button>
+    </div>
+    <table id="expenses-table">
+        <thead>
+            <tr>
+                <th>Descrição</th>
+                <th>Valor</th>
+                <th>Dia</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <h2 id="daily-budget-display"> </h2>
+
+    <div id="monthly-overview">
+        <h3>Visão Mensal do Orçamento</h3>
+        <div id="days-container"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
